@@ -3,3 +3,10 @@ body{
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
+:root{
+  --primary-color:#881337;
+  --secondary-color:#be123c;
+  --white-color:#ffffff;
+  --off-grey:#e4e4e4;
+  --grey:#4b5563;
+}

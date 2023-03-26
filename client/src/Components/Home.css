@@ -2,11 +2,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-:root{
-    --primary-color:#881337;
-    --secondary-color:#be123c;
-    --white-color:#ffffff;
-}
 /* Utlity class */
 .spacing{
     text-transform: uppercase;

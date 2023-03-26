@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
 }
-:root{
-    --primary-color:#881337;
-    --secondary-color:#be123c;
-    --black-color:black;
-}
 a{
     text-decoration: none;
     color: var(--black-color);

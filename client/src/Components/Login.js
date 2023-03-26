@@ -2,49 +2,72 @@ import React from 'react'
 import { useState } from 'react'
 import "./Login.css"
 import signinpic from "../Images/login-pic.jpg"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { MdMailOutline , MdLockOutline ,MdArrowOutward} from "react-icons/md";
-import Axios from "axios"
+import axios from "axios"
+import Validation from './LoginValidation';
 
 const Login = () => {
-    const [email , setEmail]= useState("");
-    const [password , setPassword]= useState("");
+    const [values , setValues] = useState({
+        email:'',
+        password:''
+    });
 
-    const login = () =>{
-        Axios.post("http://localhost:3001/login" , 
-        {
-            email : email,
-            password : password,
+    const [errors , setErrors] = useState({});
+    const navigate = useNavigate();
 
-        }).then((response) => {
-            console.log(response)
-        });
+    const handleInput = (event) =>{
+        setValues(prev => ({...prev , [event.target.name]: [event.target.value]}))
     }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setErrors(Validation(values));
+
+        if(errors.email === "" && errors.password === ""){
+            axios.post('http://localhost:8081/login' , values)
+            .then(res => {
+                if(res.data === "Success"){
+                    navigate('/request');
+                }else{
+                    alert("Account Not Existed..")
+                }
+            })
+            .catch(err => console.log(err));
+        }
+    }
+
 
   return (
     <div className="wrapper">
 
         <div className="login-img">
             <img src={signinpic} style={{width:"21rem"}}></img>
-            <Link className="Link" to="/register">Create an Account <MdArrowOutward size="1rem"></MdArrowOutward></Link>
         </div>
 
         <div className="login-form">
             <h1>Sign In</h1>
+            
+            <form action='' onSubmit={handleSubmit}>
 
                 <div className="input-field">
-                    <input type="email" name="email" id="email" placeholder="Your Email" required  onChange={(e) => setEmail(e.target.value)} ></input>
+                    <input type="email" name="email" id="email" placeholder="Your Email"   onChange={handleInput}></input>
                     <MdMailOutline size="1.5rem" className="in-Icon"></MdMailOutline>
                 </div>
+                {errors.email && <span style={{color:"red"}}>{errors.email}</span>}
 
                 <div className="input-field">
-                    <input type="password" name="password" id="password" placeholder="Password" required onChange={(e) => setPassword(e.target.value)} ></input>
+                    <input type="password" name="password" id="password" placeholder="Password"  onChange={handleInput} ></input>
                     <MdLockOutline size="1.5rem" className="in-Icon"></MdLockOutline>
                 </div>
+                {errors.password && <span style={{color:"red"}}>{errors.password}</span>}
 
-                <div className="submit-btn">
-                    <input type="submit" value="Log In" onClick={login}></input>
+                <div>
+                    <button type='submit' className='sign-in-btn'>Log In</button>
                 </div>
+
+                <span className='sign-in-bottom-link'>No Account? <Link className="Link" to="/register">Create One</Link></span>
+
+            </form>
         </div>
     </div>
   )
