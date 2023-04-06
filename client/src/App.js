@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import Donor from './Components/Donor'
 import Request from './Components/Request'
-import  Navigation  from './Components/Navigation';
+import Navigation  from './Components/Navigation';
 import Login from './Components/Login';
 import Register from './Components/Register';
 
