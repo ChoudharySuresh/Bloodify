@@ -1,0 +1,354 @@
+{
+  data: [
+    [
+      '1',
+      'Ms. Shwas Foundation Kavatemahankal (Trust) Sanchlit Purandar Blood Centre (Trust)<br/>S.No 4380, Property No 2/3618, second floor, President Apartment, Opp.St.stand, Pune Road, Saswad , Tal Purandar, Pune, Maharashtra, Purandar, Pune, Maharashtra<br/>Phone: 7972587797 ,Fax: -, Email: purandarbloodcenter@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 11:46:59',
+      'Blood Bank'
+    ],
+    [
+      '2',
+      'Red Plus Blood Centre Pune<br/>Sr.No.952 to 958, Hiraratan Building., 1st floor, 
+Near PMT Bus Stop, Bhosari, Pune, Pune, Maharashtra<br/>Phone: 020-27112365 /  27112333, 9921166011 ,Fax: -, Email: redplusbloodbank@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 11:23:25',
+      'Blood Bank'
+    ],
+    [
+      '3',
+      "Azad Panchi Group's, Janseva Blood Centre<br/>Building No. G, Kalapi Cira Co- Operative Society, Paud Road, S. No. 1228 & 1229, Pirangut, Tal. - Mulshi, pirangut, Pune, 
+Maharashtra<br/>Phone: 70578 81044 ,Fax: -, Email: janasevabloodcenter@gmail.com",      
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 11:21:09',
+      'Blood Bank'
+    ],
+    [
+      '4',
+      'Chakan Blood Centre<br/>Sr. No. 4976/1/2 Gate No.2401, Yashwantnagar Ambethan Road. A/P Chakan, Tal.khed,, Pune, Pune, Maharashtra<br/>Phone: 9975564130,9021868968 ,Fax: 02135-249040, Email: bloodbankchakan@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 10:52:34',
+      'Blood Bank'
+    ],
+    [
+      '5',
+      'Acharya Anandrishiji Blood Centre, Pune<br/>191/192,  Sadashiv Peth, S.M.Joshi Foundation Bldg. Near Patrakar Bhavan,, Pune, Pune, Maharashtra<br/>Phone: 8554909040,020-24537627  ,Fax: 020-24531600, Email: aapunebloodbank@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 10:40:40',
+      'Blood Bank'
+    ],
+    [
+      '6',
+      'Manikraj Bahuudeshiya Samajsevi Sanstha Shivneri Blood Centre<br/>Milkat No.4540/4247, CTS No.30, Soham Nagari, R.C.C building, A-wing, 2nd floor, Shop no.205, Manchar, 
+Ambegaon, Pune, Maharashtra<br/>Phone: 9975564130 ,Fax: -, Email: shivneribloodcentre@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 10:16:38',
+      'Blood Bank'
+    ],
+    [
+      '7',
+      'Kem Hospital Blood Centre<br/>Sardar Moodliar Road, Rastha Peth,, Pune, Pune, Maharashtra<br/>Phone: 9823955650, 9960839347 ,Fax: 26125603, Email: mathurabloodbank@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 10:09:30',
+      'Blood Bank'
+    ],
+    [
+      '8',
+      'Muktai Blood Centre of Shivpooja Bahuudeshiya Shikhan Prasarak Mandal Solapur<br/>Gat no 371, S no 416, Near Primary Teacher Society Pathsanstha, Kalthan Road, Indapur, 
+Pune, Pune, Pune, Maharashtra<br/>Phone: 9422341380 ,Fax: -, Email: muktaibloodcenter@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 10:02:30',
+      'Blood Bank'
+    ],
+    [
+      '9',
+      'Sasoon Blood Centre Pune<br/>Ground Floor,Section 5, Opp.Ambedkar Chawk,Station Rd,, Pune, Pune, Maharashtra<br/>Phone: 9423575986, 020-26128000, Ext-332-364 ,Fax: 020-26126868, Email: bjmc.bloodbank@gmail.com',
+      'Govt.',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 10:00:03',
+      'Blood Bank'
+    ],
+    [
+      '10',
+      'Padmashree Dr.D.Y Patil (Vishweshwar) Blood Centre<br/> Padmashree, Dr. Dy. Patil Medical College Hospital , Sant Tukaram Nagar, Pimpari,, Pune, Pune, Maharashtra<br/>Phone: 9561792418,020-27423844 ,Fax: 020-27420439, Email: vishweshwar.vbb@rediffmail.com',      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:56:12',
+      'Blood Bank'
+    ],
+    [
+      '11',
+      'Pune Chest & General Hospital Blood Centre, Pune<br/>Aundh Camp,, Pune, Pune, Maharashtra<br/>Phone: 8857077981, 865748749, 9604871471 ,Fax: 020-27285432, Email: csaundhpune@yahoo.co.in',
+      'Govt.',
+      "<p class='text-success'>Available, AB+Ve:3, A+Ve:3, O-Ve:1</p>",
+      '2023-04-06 09:45:39',
+      'Blood Bank'
+    ],
+    [
+      '12',
+      'Aditya Birla Memorial Hospital Blood Centre<br/>Aditya Birla Memorial Hospital Marg, Survey No:31, Near Morya Mangal Karyalay, Thergaon, Chinchwad,, RESIDENTIAL COMPLEX, THERGAON, PUNE, Pune, Maharashtra<br/>Phone: 020-30717664 ,Fax: 9120-40707755, Email: rpsingh008@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:37:17',
+      'Blood Bank'
+    ],
+    [
+      '13',
+      'Samarpit Bahuddeshiya sevabhavi sanshta Tarpan Blood Centre<br/>2nd floor, vishwaraj Hospital, Gat no-499, Loni Kalbhor, Kadamwak wasti, Haveli, Pune, Pune, Pune, Maharashtra<br/>Phone: 9545793999 ,Fax: -, Email: shashisrijagadale@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:36:17',
+      'Blood Bank'
+    ],
+    [
+      '14',
+      'Indian Red Cross Society, (Late Manikbai Chandulal Saraf ) Blood Centre, Pune<br/>Near Govt. Silver Jubilee Hospital, Patas Road Baramati,, Baramati, Pune, Maharashtra<br/>Phone: 9422333287, 02112-222951/320910 ,Fax: 00, Email: ircsbbbaramati@gmail.com',   
+      'Red Cross ',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:30:05',
+      'Blood Bank'
+    ],
+    [
+      '15',
+      'M/S Pimpri Chinchwad Blood Centre<br/>Mhada commercial complex,2nd floor above dakshin hotelSant Tukaram Nagar, Pimpri,, Pimpri, Pune, Maharashtra<br/>Phone: 7559419137 
+,Fax: -, Email: bloodbankpc@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:24:46',
+      'Blood Bank'
+    ],
+    [
+      '16',
+      'Pimpari Serological Institute Blood Centre<br/>Esteem Tower, opp K.S.B Pump, Pune-Mumbai Highway, Kharalwadi, Pimpari, Pune, Pune, Maharashtra<br/>Phone: 98226565020179, 27422279 ,Fax: -, Email: psibbpimpri@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:20:25',
+      'Blood Bank'
+    ],
+    [
+      '17',
+      'Mimer Medical College And Garware Blood Centre<br/>Near HP Gas godown, Talegaon Chakan Road, Talegaon Dabhade , Pune, Pune, Maharashtra<br/>Phone: 8087099051 ,Fax: -, Email: kumarpr56@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:16:30',
+      'Blood Bank'
+    ],
+    [
+      '18',
+      'AUTUS BLOOD CENTRE<br/>Hous no 11 First floor old Pune Mumbai highway near waghmare building dehuroad, Pune, Pune, Maharashtra<br/>Phone: 8600005558 ,Fax: -, Email: vimalcharitabletrust@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:16:16',
+      'Blood Bank'
+    ],
+    [
+      '19',
+      'Pune Blood Centre<br/>Orient villa , serve no 266, plot no 6 , Hadapsar Pune, Pune, Pune, Maharashtra<br/>Phone: 9075653410 ,Fax: -, Email: punebloodbank@gmail.com',    
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:14:32',
+      'Blood Bank'
+    ],
+    [
+      '20',
+      'Girija Blood Centre<br/>s. H. 8, Hissa No 8, ground floor, Giriraj Nursing college, Indapur Road, Baramati, Pune, Maharashtra<br/>Phone: 9665555498 ,Fax: -, Email: girijabloodbank@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:10:42',
+      'Blood Bank'
+    ],
+    [
+      '21',
+      "Konkan Mitra Mandal Medical Trust'S Sahyadri Speaciality Hospital Blood Centre<br/>Plot No-30 C, Erandvane, Karve Road,, Pune, Pune, Maharashtra<br/>Phone: 9673338405 / 
+9850540682 / 9422548833 ,Fax: 020 - 67213000, Email: labqm@sahyadrihospitals.com",      
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:07:33',
+      'Blood Bank'
+    ],
+    [
+      '22',
+      'Morya Blood Centre <br/>N.B.Engineers, Plot No.Se/1/1-1, D-11, Block, MIDC, Near 
+Mohan Nagar, CHINCHWAD, Pune, Maharashtra<br/>Phone: 9975564130, 02027462000 ,Fax: -, Email: morayabloodbank7@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:05:28',
+      'Blood Bank'
+    ],
+    [
+      '23',
+      'Rotary Blood Centre<br/>18, Mahesh Society, Gopalwadi Road, Daund, Dist. Pune, Pune, Pune, Maharashtra<br/>Phone: 7756873333 ,Fax: -, Email:  rotarybloodbank2017@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 09:00:48',
+      'Blood Bank'
+    ],
+    [
+      '24',
+      'Rakesh Jain Memorial Blood Centre<br/>C/O Poona Hospital and Research Centre, 27, Sadashiv Peth, , Pune, Pune, Maharashtra<br/>Phone: 02066096004 ,Fax: 24338477, Email: 
+rjmbb@poonahospital.org',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:59:44',
+      'Blood Bank'
+    ],
+    [
+      '25',
+      'Deenanath Mangeshkar Hospital, Blood Centre<br/>DEENANATH MANGESHKAR HOSPITAL RESEARCH CENTER SUPER SPECIALITY BUILDING, GROUND FLOOR, 8 PLUS 13/2, ERANDWANE, NEAR HIMALI SOCIETY,, PUNE, Pune, Maharashtra<br/>Phone: 9822545665 ,Fax: 020-40541003, Email: bloodbank@dmhospital.org',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:50:17',
+      'Blood Bank'
+    ],
+    [
+      '26',
+      'Chattrapati Shahu Maharaj Aadhar Blood Centre<br/>S.NO. 30, PLOT NO.11, �WARIS HEIGHTS� 4TH office no: 401,402,403 & 5TH FLOOR, OFF. NO. 502, Waris Heights, PUNE SATARA 
+ROAD, DHANKWADI,, Pune, Pune, Maharashtra<br/>Phone: 9890927792,(020)65266999,39398822,23,24 ,Fax: -, Email: patilsuresh9@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:45:46',
+      'Blood Bank'
+    ],
+    [
+      '27',
+      'Grant Medical Foundation,  A.H. Wadia Trust Blood Centre<br/>40, Sassoon Road, Ruby Hall Clinic, Post Box No. 70,, Pune, Pune, Maharashtra<br/>Phone: 9890148566,020-26166318 ,Fax: 020-26164529, Email: bloodbank@rubyhall.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:43:55',
+      'Blood Bank'
+    ],
+    [
+      '28',
+      'Poona Serological Institute Blood Centre<br/>C.T.S. No-592,3rd Floor,Dhanwantari 
+Complex, Near Tarachand Hosp, Rasta Peth,, Pune, Pune, Maharashtra<br/>Phone: 9225507815,020-26133387/26141719 ,Fax: 020-27472876, Email: psibbpune@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:30:28',
+      'Blood Bank'
+    ],
+    [
+      '29',
+      'Sanjeevani Blood Centre Bhosari<br/>690, 2nd floor, Shine Grand, above Saraswat Bank, Shital Baugh Soc., Bhosari, Pune, Maharashtra<br/>Phone: 7756873333, 8070104104 ,Fax: -, Email: pransanjeevanibb@gmail.com�',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:28:07',
+      'Blood Bank'
+    ],
+    [
+      '30',
+      'M/S Bharati Vidyapeeth Medical Foundations Bharati Hospital Blood Centre<br/>1st 
+Floor, of Bharati Hospital, Bharati Vidyapeeth S.No. 28, Dhankawadi Campus, Pune- Satara Road,, Pune, Pune, Maharashtra<br/>Phone: 9420320999,020-40555555  Ext-115 ,Fax: 020 24379432, Email: bhbloodbank@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:27:25',
+      'Blood Bank'
+    ],
+    [
+      '31',
+      'Noble Charitable Trust�S Noble Blood Centre<br/>B-007, Basement c/o Noble Hospital, 153 Magarpatta city Road, Hadapsar,, Pune, Pune, Maharashtra<br/>Phone: 9011689494,020-66285050/5051 ,Fax: 020-66285199, Email: dramatesc@rediffmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:23:18',
+      'Blood Bank'
+    ],
+    [
+      '32',
+      'Akshay Blood Centre<br/>SURVEY NO.10, HISSA NO. 2A/1/3, UNNATINAGAR, HADAPSAR, , 
+Pune, Pune, Maharashtra<br/>Phone: 9890244339 ,Fax: -, Email: akshaybloodbankpune@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:09:13',
+      'Blood Bank'
+    ],
+    [
+      '33',
+      'Sadhu Vaswani Mission Medical Complex, Inlaks & Budharani Hospital Blood Centre, 
+Pune<br/>7-9, Koregaon Park,, Pune, Pune, Maharashtra<br/>Phone: 9373510112,020-66099727 ,Fax: 020-66099703, Email: abarte2010@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:04:29',
+      'Blood Bank'
+    ],
+    [
+      '34',
+      "Pimpri Chinchwad  Municipal Corporation'S Y.C.M. Hospital Blood Centre<br/>Ground floor of Y.C.M. Hospital,  Sant Tukaram Nagar, Pimpri, Pune, Pune, Pune, Maharashtra<br/>Phone: 9823038155 ,Fax: -, Email: bloodbank@pcmcindia.gov.in",
+      'Govt.',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 08:04:08',
+      'Blood Bank'
+    ],
+    [
+      '35',
+      'Jankalyan Raktapedhi Pune<br/>1003, Shukrawar Peth, Swargate - Saras Baugh Road, 
+Near. Natraj Hotel,, Pune, Pune, Maharashtra<br/>Phone: 9527768755,020-24449527/ 24444502 ,Fax:  020-24441463, Email: Janrakta@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 07:58:41',
+      'Blood Bank'
+    ],
+    [
+      '36',
+      'Indian Serological Institute Blood Centre<br/>21, Anand Baugh, Navi Peth, Near Vaikunth,, Pune, Pune, Maharashtra<br/>Phone: 020-24535244, 9096039023 ,Fax: -, Email: isibloodbank@rediffmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 07:10:18',
+      'Blood Bank'
+    ],
+    [
+      '37',
+      'Jehangir Hospital Blood Centre<br/>32, Sasoon Road,, Pune, Pune, Pune, Maharashtra<br/>Phone: 8888821008,020-66811722 / 66811723  ,Fax: 020-26050866, Email: bloodbank@jehangirhospital.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 06:57:08',
+      'Blood Bank'
+    ],
+    [
+      '38',
+      'Symbiosis University Hospital And Research Center Blood Centre Of Symbiosis Trust<br/>Room No.1806,Block B, Ground Floor, Gat No.936/1 & 936/2, At post- Lavale, , Mulshi, Pune, Pune, Pune, Maharashtra<br/>Phone: 8087072212 ,Fax: -, Email: bloodbnk@suhrc.siu,edu.in',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 02:13:46',
+      'Blood Bank'
+    ],
+    [
+      '39',
+      'Jupiter Lifeline Hospital Blood Centre<br/>Jupiter Lifeline Hospital, Second Floor,  Near Prathmesh Park, Baner � Pimple  Nilakh Road,, Pune, Pune, Maharashtra<br/>Phone: 9860816708, 020-27992799  ,Fax: -, Email: bloodbank.pune@jupiterhospital.com',        
+      'Private',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-06 00:45:46',
+      'Blood Bank'
+    ],
+    [
+      '40',
+      'Smt Kashibai Navale General Hospital Blood Centre<br/>Sr. No. 50/15,Building No.5 2nd floor, Narhe, Ambegaon, Pune, Pune, Pune, Maharashtra<br/>Phone: 9422986743, 02067537140 ,Fax: 02067537444, Email: bloodbank@sknmcgh.org',
+      'Charitable/Vol',
+      "<p class='text-success'>Available, A+Ve:1</p>",
+      '2023-04-06 00:19:29',
+      'Blood Bank'
+    ],
+    [
+      '41',
+      'M/S Vidyashree Charitable Trusts Om Blood Centre<br/>Upper Ground Floor, CTs No.61/1, Maruti Heights, Mangalwar Peth,, Pune, Pune, Maharashtra<br/>Phone: 09665012355,08149508080 / 7304101080 ,Fax: -, Email: muneshkolhe@rediffmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2023-04-05 11:01:47',
+      'Blood Bank'
+    ],
+    [
+      '42',
+      'Sarvodaya Samaj Vikas Sanstha,  R.G Gholap Memorial Blood Centre<br/>Office no.301, 3rd floor Ashoka Centre, S.No - 47/14, Pune Satara Road Parvati,, Pune, Pune, Maharashtra<br/>Phone: 9545646001,020-64012140, 9822442140 ,Fax: 
+-, Email: gholapbloodbank@gmail.com',
+      'Charitable/Vol',
+      "<p class='text-danger'><b>Whole Blood</b>Not Available Search for another Component",
+      '2022-09-16 08:37:55',
+      'Blood Bank'
+    ]
+  ]
+}

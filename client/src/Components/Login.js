@@ -3,7 +3,7 @@ import { useState } from 'react'
 import "./Login.css"
 import signinpic from "../Images/login-pic.jpg"
 import { Link, useNavigate } from 'react-router-dom'
-import { MdMailOutline , MdLockOutline ,MdArrowOutward} from "react-icons/md";
+import { MdMailOutline , MdLockOutline } from "react-icons/md";
 import axios from "axios"
 import Validation from './LoginValidation';
 
@@ -26,7 +26,8 @@ const Login = () => {
         if(errors.email === "" && errors.password === ""){
             axios.post('http://localhost:8081/login' , values)
             .then(res => {
-                if(res.data === "Success"){
+                console.log(res)
+                if(res.status == 200){
                     navigate('/request');
                 }else{
                     alert("Account Not Existed..")
@@ -41,7 +42,7 @@ const Login = () => {
     <div className="wrapper">
 
         <div className="login-img">
-            <img src={signinpic} style={{width:"21rem"}}></img>
+            <img src={signinpic} style={{width:"21rem"}} alt='oops'></img>
         </div>
 
         <div className="login-form">
