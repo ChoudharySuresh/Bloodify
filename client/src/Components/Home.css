@@ -9,6 +9,7 @@
 }
 
 .container-hero{
+    /* background-color: #f5e9ea; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,10 +21,12 @@
     padding: 1rem;
 }
 .info h1{
+    /* color: #CC313D; */
     margin-bottom: 1rem;
     font-size: 40px;
 }
 .info p{
+    /* color: #CC313D; */
     font-size: 17px;
     letter-spacing: 0.5px;
     margin-bottom: 2rem;
@@ -49,5 +52,6 @@
     max-width: 50%;
 }
 .hero-img img{
+    background-color: #f5d8dc;
     width: 42rem;
 }

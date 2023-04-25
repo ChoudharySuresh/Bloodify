@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Home.css"
 import Hero from "../Images/Hero.jpg"
+import About from './About'
+import './About.css'
+
 const Home = () => {
   return (
+    <>
     <div className='container-hero'>
       <div className='info'>
         <h1>Be a hero, donate blood today.</h1>
@@ -13,9 +17,11 @@ const Home = () => {
         </Link>
       </div>
       <div className='hero-img'>
-          <img src={Hero} alt='oops'></img>
+          <img src={Hero}></img>
       </div>
     </div>
+    <About></About>
+    </>
   )
 }
 

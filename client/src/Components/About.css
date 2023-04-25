@@ -1,0 +1,26 @@
+.col{
+    background-image: linear-gradient(to right, #fd6f88 , #fb9065);
+    height: 39vh;
+
+}
+
+.about-container{
+    color: black;
+    width: 50rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    position: relative;
+    top: 3.5rem;
+    left:28rem;
+}
+
+.about-container h2{
+
+    margin: 1rem 0;
+}
+
+.about-container h1{
+    text-decoration: underline;
+}

@@ -78,11 +78,12 @@ app.post('/login', async (req, res) => {
 
 app.get('/request', async (req, res) => {
     const selectedOption = req.query.selectedOption;
+    const location = req.query.location;
     try {
         console.log(selectedOption)
         
         const result = await db.query(
-            'SELECT * from blood_data' 
+            `SELECT * from blood_data where ${selectedOption} != '0' and address LIKE '%${location}%';` 
         )
         return res.json(result.rows);
     } catch(err){
