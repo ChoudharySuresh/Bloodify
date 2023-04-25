@@ -9,13 +9,15 @@
   },
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "file",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "mysql": "^2.18.1",
     "node-fetch": "^3.3.1",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0"
   }
 }

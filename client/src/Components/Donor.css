@@ -1,0 +1,53 @@
+.donor-container{
+    width: 50rem;
+    height: 30rem;
+    background-image: url('../Images/blob-scene.svg');
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.donor-bg img{
+    width: 45rem;
+}
+.donor-form-container{
+    background-color: white;
+    position: relative;
+    top: 2rem;
+    width: 20rem;
+    left: 15rem;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    /* border: 1px solid black; */
+}
+.donor-info{
+    /* background-color: antiquewhite; */
+    margin: 1rem;
+}
+.donor-info input {
+    width: 16rem;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+}
+.donor-info select{
+    width: 17rem;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+}
+label{
+    display: block;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+.donor-submit-btn{
+    padding: 5px;
+    width: 17rem;
+    font-size: 18px;
+    position: relative;
+    left: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+}

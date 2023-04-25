@@ -3,7 +3,7 @@ import "./Register.css"
 import {useNavigate} from "react-router-dom"
 import axios from 'axios'
 import signUpPic from "../Images/Sign up.svg"
-import { MdMailOutline , MdLockOutline , MdOutlinePhone , MdPermIdentity} from "react-icons/md";
+import { MdMailOutline , MdLockOutline  , MdPermIdentity} from "react-icons/md";
 import Validation from './RegisterValidation'
 
 const Register = () => {

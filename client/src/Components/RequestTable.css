@@ -1,0 +1,23 @@
+table{
+    width: 100vw;
+    padding: 2rem;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+td{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+.request-table-heading{
+    text-align: center;
+    padding: 1rem;
+}
+.request-table-container{
+    text-align: center;
+    margin: auto;
+}
