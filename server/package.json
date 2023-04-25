@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "file",
+=======
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -17,7 +19,17 @@
     "fs": "^0.0.1-security",
     "mysql": "^2.18.1",
     "node-fetch": "^3.3.1",
+<<<<<<< HEAD
     "nodemon": "^2.0.21",
     "pg": "^8.10.0"
   }
+=======
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
+    "pg-promise": "^11.4.3",
+    "sequelize": "^6.31.0"
+  },
+  "keywords": [],
+  "description": ""
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
 }

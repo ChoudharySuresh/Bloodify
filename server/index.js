@@ -1,6 +1,10 @@
 const express = require("express");
 const mysql = require('mysql');
 const cors = require('cors');
+<<<<<<< HEAD
+=======
+const sequelize = require('sequelize');
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
 // const fs = require('fs')
 
 const app = express();
@@ -13,7 +17,11 @@ const db = new pg.Client({
     user: 'postgres',
     host: 'localhost',
     database: 'bloodify',
+<<<<<<< HEAD
     password: 'Suresh@8636',
+=======
+    password: '123456',
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
     port: 5432,
 })
 
@@ -77,12 +85,19 @@ app.post('/login', async (req, res) => {
 
 app.get('/request', async (req, res) => {
     const selectedOption = req.query.selectedOption;
+<<<<<<< HEAD
     const location = req.query.location;
+=======
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
     try {
         console.log(selectedOption)
         
         const result = await db.query(
+<<<<<<< HEAD
             `SELECT * from blood_data where ${selectedOption} != '0' and address LIKE '%${location}%';` 
+=======
+            'SELECT * from blood_data' 
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
         )
         return res.json(result.rows);
     } catch(err){

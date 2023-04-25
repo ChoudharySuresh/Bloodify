@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState  } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./Request.css"
@@ -31,10 +32,18 @@ var cities = [
   "Faridabad",
   "Rajkot"
 ];
+=======
+import React, { useEffect, useState } from 'react'
+import "./Request.css"
+import Avatar from "../Images/Avatar.jpg"
+import axios from 'axios'
+
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
 
 function Request() {
 
   const [selectedOption, setSelectedOption] = useState('');
+<<<<<<< HEAD
   const [value, setValue] = useState('');
 
   const [result , setResult] = useState([]);
@@ -67,6 +76,44 @@ function Request() {
   const handleChange = (value) => {
     setValue(value)
     //fetchData(value)
+=======
+  const [location, setLocation] = useState('');
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     axios.get(`http://localhost:8081/addres`)
+  //       .then(data => console.log(data.data))
+  //       .catch(err => console.log(err))
+  //   });
+  // }, [])
+
+  const fetchData = (value) => {
+    axios.get(`http://localhost:8081/request`)
+    .then((data) => {console.log(data.data[0])})
+    //const values = Object.values(data)
+    //console.log(typeof(data.data))
+    // .then(data => {
+    //   const results = data.filter((data) =>{
+    //     return data && data.data.address && data.data.address.toLowerCase().includes(value);
+    //   });
+    //   console.log(results);
+    // })
+  }
+
+  const handleChange = (value) => {
+    setLocation(value)
+    fetchData(value)
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    axios.get(`http://localhost:8081/request?selectedOption=${selectedOption}`)
+      // .then(response => response.JSON())
+      .then(data => console.log(data))
+      .catch(err => console.log(err))
+
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
   }
 
    const onSearch = (searchTerm) => {
@@ -109,7 +156,12 @@ function Request() {
           </div>
 
           <div className='req-input'>
+<<<<<<< HEAD
             <select className='select' name='bloodGroup' id='bloodGroup' value={selectedOption} onChange={e => setSelectedOption(e.target.value)}>
+=======
+            <h2>{selectedOption}</h2>
+            <select name='bloodGroup' id='bloodGroup' value={selectedOption} onChange={e => setSelectedOption(e.target.value)}>
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
               <option>select Blood Group</option>
               <option value="a_pos">A+</option>
               <option value="a_neg">A-</option>
@@ -124,6 +176,7 @@ function Request() {
 
 
           <div className='req-input'>
+<<<<<<< HEAD
             <input type="text" placeholder='Enter Location' value={value} onChange={e => handleChange(e.target.value)}></input>
           </div>
 
@@ -152,6 +205,12 @@ function Request() {
 
           <button className='request-submitBtn' type='submit'>Submit</button>
 
+=======
+            <input type="text" placeholder='Enter Location' onChange={e => handleChange(e.target.value)}></input>
+          </div>
+
+          <button className='request-submitBtn' type='submit'>Submit</button>
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
         </form>
       </div>
 

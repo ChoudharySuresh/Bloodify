@@ -19,7 +19,11 @@ const db = new pg.Client({
     user:'postgres',
     host:'localhost',
     database:'bloodify',
+<<<<<<< HEAD
     password:'Suresh@8636',
+=======
+    password:'123456',
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
     port:5432,
 })
 
@@ -57,7 +61,11 @@ function fetchData() {
             const data = JSON.parse(jsonString);
             //console.log("data", data.data[0][1]);
 
+<<<<<<< HEAD
             for(var i=0; i<3319;i++)
+=======
+            for(var i=3280; i<3319;i++)
+>>>>>>> 042b7e69d268a0c03b41163e686d92a56cba2213
             {
                 //console.log(data.data[i]);
             

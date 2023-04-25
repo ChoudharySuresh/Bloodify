@@ -42,7 +42,7 @@ const Login = () => {
     <div className="wrapper">
 
         <div className="login-img">
-            <img src={signinpic} style={{width:"21rem"}}></img>
+            <img src={signinpic} style={{width:"21rem"}} alt='oops'></img>
         </div>
 
         <div className="login-form">

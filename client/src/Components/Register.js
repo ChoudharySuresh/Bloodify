@@ -26,6 +26,7 @@ const Register = () => {
         if(errors.name === "" && errors.email === "" && errors.password === ""){
             axios.post('http://localhost:8081/signup' , values)
             .then(res => {
+                console.log(res);
                 navigate('/login');
             })
             .catch(err => console.log(err));
@@ -39,7 +40,7 @@ const Register = () => {
         <div className='register-form'>
             <h2>Sign Up</h2>
 
-            <form action='' onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
 
                 <div className='input-field'>
                     <input name='name' type="text" placeholder='Enter User Name' onChange={handleInput}></input>
@@ -67,7 +68,7 @@ const Register = () => {
         </div>
 
         <div className='register-img'>
-            <img src={signUpPic}></img>
+            <img src={signUpPic} alt='oops'></img>
         </div>
       </div>
     </>
