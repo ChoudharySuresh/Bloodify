@@ -7,6 +7,8 @@ import Request from './Components/Request'
 import Navigation  from './Components/Navigation';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import RequestTable from './Components/RequestTable';
+import DonateTable from './Components/DonateTable';
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
             <Route path='/request' element={<Request/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/register' element={<Register/>}></Route>
+            <Route path='/RequestTable' element={<RequestTable/>}></Route>
+            <Route path='/DonateTable' element={<DonateTable/>}></Route>
+            
           </Routes>
       </BrowserRouter>
     </>

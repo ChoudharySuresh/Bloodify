@@ -1,7 +1,6 @@
 const express = require("express");
 const mysql = require('mysql');
 const cors = require('cors');
-const sequelize = require('sequelize');
 // const fs = require('fs')
 
 const app = express();
@@ -64,6 +63,30 @@ app.post('/login', async (req, res) => {
 
 })
 
+app.post('/requestauth', async (req, res) => {
+    const reqname = req.body.value;
+    try{
+        console.log(reqname)
+        const result = await db.query(
+            `SELECT name from login where name = $1`, [reqname]
+        )
+        if (result.rows.length == 0){
+            return res.status(401).json("Name Not Found")
+        }
+        const user = result.rows;
+
+        if (user.reqname != req.body.reqname) {
+            return res.status(401).json("Unathourized")
+        }
+        return res.json(user)
+    }catch (err) {
+        console.log(err);
+        return res.status(500).json("Internal server error")
+    }
+}
+
+)
+
 // app.get('/addres', async (req, res) => {
 //     try {
 //         const result = await db.query(
@@ -78,7 +101,10 @@ app.post('/login', async (req, res) => {
 
 app.get('/request', async (req, res) => {
     const selectedOption = req.query.selectedOption;
+
+
     const location = req.query.location;
+
     try {
         console.log(selectedOption)
         
@@ -92,6 +118,19 @@ app.get('/request', async (req, res) => {
     }
 })
 
+app.get('/donate', async (req, res) => {
+    const location = req.query.location.toLocaleLowerCase();
+
+    try {
+        const result = await db.query(
+            `SELECT * from donate_data where LOWER(address) LIKE '%${location}%';` 
+        )
+        return res.json(result.rows);
+    } catch(err){
+        console.log(err);
+        return res.status(500).json("Internal server error")
+    }
+})
 
 app.listen(8081, () => {
     console.log("listening...");

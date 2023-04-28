@@ -28,7 +28,7 @@ const Login = () => {
             .then(res => {
                 console.log(res)
                 if(res.status == 200){
-                    navigate('/request');
+                    navigate('/');
                 }else{
                     alert("Account Not Existed..")
                 }
@@ -66,7 +66,7 @@ const Login = () => {
                     <button type='submit' className='sign-in-btn'>Log In</button>
                 </div>
 
-                <span className='sign-in-bottom-link'>No Account? <Link className="Link" to="/home">Create One</Link></span>
+                <span className='sign-in-bottom-link'>No Account? <Link className="Link" to="/register">Create One</Link></span>
 
             </form>
         </div>
