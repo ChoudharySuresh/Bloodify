@@ -6,8 +6,6 @@ const RequestTable = ({ props }) => {
     const location = useLocation();
     var arr = location.state.arr;
     console.log(arr)
-
-    function DonateTable(){
     return (
         <div>
             <h2 className='request-table-heading'>Blood Bank Details</h2>
@@ -41,5 +39,5 @@ const RequestTable = ({ props }) => {
         </div>
     )
 }
-}
-export default DonateTable
+
+export default RequestTable
