@@ -2,8 +2,8 @@ const express = require("express");
 const mysql = require('mysql');
 const cors = require('cors');
 // const fs = require('fs')
+const jwt = require('jsonwebtoken');
 require('dotenv').config()
-const jwt = require('jsonwebtoken')
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -47,25 +47,31 @@ app.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body;
 
-        if (email == undefined || password == undefined){
+        if (email == undefined || password == undefined) {
             return res.status(400).send({
-                error : "All parameters required"
+                error: "All parameters required"
             })
         }
         const query = 'SELECT email, password from login where email=$1';
-        const { rows } = await db.query(query, [email]);
+        const { rows } = await db.query(query, [email[0]]);
 
         if (rows.length === 0) {
             return res.status(401).json({ error: 'Invalid email or password' });
         }
-
+        console.log(password)
         const user = rows[0];
-        const valid = await bcrpyt.compare(password, user.password);
+        //const valid = await bcrpyt.compare(password, user.password);
+        console.log(user.password)
+        if (password[0] == user.password) {
+            valid = true
+        } else {
+            valid = false
+        }
         if (!valid) {
             return res.status(401).json({ error: 'Invalid email or password' });
         }
 
-        const token = jwt.sign({ id: user.email, email: user.password}, process.env.JWT_SECRET,{
+        const token = jwt.sign({ id: user.email, email: user.password }, process.env.JWT_SECRET, {
             expiresIn: process.env.JWT_EXPIRES_IN,
         });
         return res.status(200).json({ token });
@@ -77,12 +83,12 @@ app.post('/login', async (req, res) => {
 
 app.post('/requestauth', async (req, res) => {
     const reqname = req.body.value;
-    try{
+    try {
         console.log(reqname)
         const result = await db.query(
             `SELECT name from login where name = $1`, [reqname]
         )
-        if (result.rows.length == 0){
+        if (result.rows.length == 0) {
             return res.status(401).json("Name Not Found")
         }
         const user = result.rows;
@@ -91,14 +97,34 @@ app.post('/requestauth', async (req, res) => {
             return res.status(401).json("Unathourized")
         }
         return res.json(user)
-    }catch (err) {
+    } catch (err) {
         console.log(err);
         return res.status(500).json("Internal server error")
     }
 }
 
 )
-
+app.get('/listDonars', async(req, res)=>{
+    try{
+        const result = await db.query('SELECT * from list_of_donars')
+        console.log(result.rows)
+        return res.json(result.rows);
+    }
+    catch(err){
+        console.log(err);
+        return res.status(500).json("Internal server error")
+    }
+})
+app.post('/addDonars', async(req, res)=>{
+    try{
+        const result = await db.query('SELECT address from list_of_donars')
+        console.log(result.rows)
+        return res.json(result.rows)
+    }catch(err){
+        console.log(err);
+        return res.status(500).json("Internal server error")
+    }
+})
 // app.get('/addres', async (req, res) => {
 //     try {
 //         const result = await db.query(
@@ -113,32 +139,47 @@ app.post('/requestauth', async (req, res) => {
 
 app.get('/request', async (req, res) => {
     const selectedOption = req.query.selectedOption;
-
+    const token = req.header('Authorization');
 
     const location = req.query.location;
 
     try {
         console.log(selectedOption)
-        
-        const result = await db.query(
-            `SELECT * from blood_data where ${selectedOption} != '0' and address LIKE '%${location}%';` 
-        )
-        return res.json(result.rows);
-    } catch(err){
+        jwt.verify(token, process.env.JWT_SECRET, async (err, decoded) => {
+            if (err) {
+                // Return 403 Forbidden if token is invalid
+                return res.sendStatus(403);
+            }
+            const result = await db.query(
+                `SELECT * from blood_data where ${selectedOption} != '0' and address LIKE '%${location}%';`
+            )
+            return res.json(result.rows);
+        });
+    }
+    catch (err) {
         console.log(err);
         return res.status(500).json("Internal server error")
     }
-})
+});
+
+
 
 app.get('/donate', async (req, res) => {
     const location = req.query.location.toLocaleLowerCase();
+    const token = req.header('Authorization');
+
 
     try {
+        jwt.verify(token, process.env.JWT_SECRET, async (err, decoded) => {
+            if (err) {
+                // Return 403 Forbidden if token is invalid
+                return res.sendStatus(403);
+    }
         const result = await db.query(
-            `SELECT * from donate_data where LOWER(address) LIKE '%${location}%';` 
+            `SELECT * from donate_data where LOWER(address) LIKE '%${location}%';`
         )
         return res.json(result.rows);
-    } catch(err){
+    })} catch (err) {
         console.log(err);
         return res.status(500).json("Internal server error")
     }

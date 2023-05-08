@@ -1,6 +1,6 @@
 .donor-container{
-    width: 22rem;
-    height: 23rem;
+    width: 30rem;
+    height: 35rem;
     background-image: url('../Images/blob-scene.svg');
     /* margin: auto;
     margin-top: 3rem;
@@ -35,7 +35,7 @@
 }
 .donor-info{
     /* background-color: antiquewhite; */
-    margin: 1rem;
+    margin: rem;
 }
 .donor-info input {
     text-align: center;
@@ -62,12 +62,29 @@ label{
     margin-bottom: 3px;
     font-size: 18px;
 } */
+
+.select{
+    text-align: center;
+    font-size: 16px;
+    appearance: none;
+    width: 95%;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid var(--white-color);
+    background: var(--off-grey);
+    padding: 12px;
+    padding-right: 12px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color:var(--grey);
+}
+
 .donor-submitBtn{
 
     font-size: 16px;
     width: 10rem;
     margin-right: 3rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-left: 3rem;
     padding: 8px;
     background-color:var(--white-color);

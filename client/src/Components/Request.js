@@ -104,17 +104,23 @@ function Request() {
       })
       
       .catch(err => console.log(err));
-
-    await axios.get(`http://localhost:8081/request`, {
-      params: {
-        selectedOption: selectedOption,
-        location: value
+      const token = localStorage.getItem("token");
+      console.log(token)
+      if(token == null){
+        navigate('/login');
       }
-    }).then((res) => {
-      // setContent( res.data);
-      setList(res.data);
-
-    }).catch(err => console.log(err))
+      await axios.get(`http://localhost:8081/request`, {
+        params: {
+          selectedOption: selectedOption,
+          location: value
+        },
+        headers: {
+          Authorization: `${token}`
+        }
+      }).then((res) => {
+        // setContent( res.data);
+        setList(res.data);
+      }).catch(err => console.log(err));
 
     console.log(list)
     
@@ -134,9 +140,9 @@ function Request() {
         <img src={Avatar} alt='oops'></img>
         <form onSubmit={handleSubmit}>
 
-          <div className='req-input'>
+          {/* <div className='req-input'>
             <input type="text" placeholder='Enter Full Name' value={reqname} onChange={e => setReqname(e.target.value)}></input>
-          </div>
+          </div> */}
 
           <div className='req-input'>
             {/* <h2>{selectedOption}</h2> */}

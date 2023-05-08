@@ -27,7 +27,7 @@ var arr =  location.state.arr;
         {arr.map((val, key) => {
           return (
             <tr key={key}>
-              <td>{val.id}</td>
+              <td>{key+1}</td>
               <td>{val.name}</td>
               <td>{val.address}</td>
               <td>{val.phoneno}</td>

@@ -39,6 +39,7 @@ var cities = [
 
 const Donor = () => {
 
+  const [selectedOption,setSelectedOption] = useState('');
   const [value, setValue] = useState('');
   const [content, setContent] = useState([]);
   const [list, setList] = useState([]);
@@ -66,9 +67,21 @@ const Donor = () => {
   async function handleSubmit(event) {
     event.preventDefault();
 
+    const token = localStorage.getItem("token");
+    console.log(token)
+    if (token == null) {
+      navigate('/login');
+    }
+
     await axios.get(`http://localhost:8081/donate`, {
       params: {
-        location: value
+        selectedOption: selectedOption,
+        location: value,
+        nname: value,
+        phoneno: value
+      },
+      headers: {
+        Authorization: `${token}`
       }
     }).then((res) => {
       // setContent( res.data);
@@ -78,19 +91,42 @@ const Donor = () => {
     console.log(list)
 
     if (list.length > 0) {
-      navigate('/DonateTable', { state: { arr: list} });
-    // {<RequestTable arr={[1,2]} />}
-  }
-    
+      navigate('/DonateTable', { state: { arr: list, selectedOption: selectedOption } });
+      // {<RequestTable arr={[1,2]} />}
+    }
+
   }
 
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-      <div className="donor-container">
-      <img src={Avatar} alt='oops'></img>
-      <div className='donor-info'>
+        <div className="donor-container">
+          <img src={Avatar} alt='oops'></img>
+          <div className='donor-info'>
+            <input type="text" placeholder='Name' value={value} onChange={e => handleChange(e.target.value)}></input>
+          </div>
+
+          <div className='donor-info'>
+            <input type="text" placeholder='Phone No.' value={value} onChange={e => handleChange(e.target.value)}></input>
+          </div>
+
+          <div className='donor-info'>
+           {/* <h2>{selectedOption}</h2>  */}
+            <select className='select' name='bloodGroup' id='bloodGroup' value={selectedOption} onChange={e => setSelectedOption(e.target.value)}>
+              <option>Select Blood Group</option>
+              <option value="a_pos">A+</option>
+              <option value="a_neg">A-</option>
+              <option value="b_pos">B+</option>
+              <option value="b_neg">B-</option>
+              <option value="ab_pos">AB+</option>
+              <option value="ab_neg">AB-</option>
+              <option value="o_pos">O+</option>
+              <option value="o_neg">O-</option>
+            </select>
+          </div>
+
+          <div className='donor-info'>
             <input type="text" placeholder='Enter Location' value={value} onChange={e => handleChange(e.target.value)}></input>
           </div>
 
@@ -127,8 +163,8 @@ const Donor = () => {
               ))}
             </div>
           </div>
-            <button className='donor-submitBtn' type='submit'>Donate</button>
-      </div>
+          <button className='donor-submitBtn' type='submit'>Donate</button>
+        </div>
       </form>
     </div>
   )

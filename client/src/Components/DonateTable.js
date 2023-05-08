@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom';
 const RequestTable = ({ props }) => {
 
     const location = useLocation();
+    var selectedOption = location.state.selectedOption
+    console.log(selectedOption)
     var arr = location.state.arr;
     console.log(arr)
     return (
@@ -24,8 +26,8 @@ const RequestTable = ({ props }) => {
                     <tbody>
                         {arr.map((val, key) => {
                             return (
-                                <tr key={key}>
-                                    <td>{val.id}</td>
+                                <tr key={key} onClick={() => console.log('Printed')}>
+                                    <td>{key+1}</td>
                                     <td>{val.name}</td>
                                     <td>{val.address}</td>
                                     <td>{val.phoneno}</td>

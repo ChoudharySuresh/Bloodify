@@ -1,0 +1,53 @@
+.donor-list-table-wrapper{
+    position: relative;
+    top: 4rem;
+}
+table{
+    width: 100vw;
+    padding: 2rem;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+td{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+.donor-list-table-heading{
+    text-align: center;
+    padding: 1rem;
+}
+.donor-list-table-container{
+    text-align: center;
+    margin: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+    margin-left: 75%;
+
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #666;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    /* background-color: #ddd; */
+    background-color: #4CAF50;
+  }
+  
+  
+  

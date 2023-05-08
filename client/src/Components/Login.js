@@ -24,9 +24,11 @@ const Login = () => {
         setErrors(Validation(values));
 
         if(errors.email === "" && errors.password === ""){
+            console.log(values)
             axios.post('http://localhost:8081/login' , values)
             .then(res => {
                 console.log(res)
+                    localStorage.setItem("token",res.data.token);
                 if(res.status == 200){
                     navigate('/');
                 }else{

@@ -9,6 +9,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import RequestTable from './Components/RequestTable';
 import DonateTable from './Components/DonateTable';
+import DonorList from './Components/DonorList'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/register' element={<Register/>}></Route>
             <Route path='/RequestTable' element={<RequestTable/>}></Route>
             <Route path='/DonateTable' element={<DonateTable/>}></Route>
+            <Route path='/DonorList' element={<DonorList/>}></Route>
             
           </Routes>
       </BrowserRouter>
